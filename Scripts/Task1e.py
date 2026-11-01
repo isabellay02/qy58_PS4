@@ -16,6 +16,7 @@ arcpy.env.workspace = str(data_path) # Set the default workspaces
 # Create string variables
 stream = "streams.shp"
 
+# Buffer tool loop
 for distance_input in [100, 200, 300, 400, 500]:
     distance = f"{distance_input} meters"
     output = str(scratch_path / f"buff_{distance_input}m.shp")

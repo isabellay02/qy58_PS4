@@ -11,7 +11,7 @@ scratch_path = script_path.parent / 'Scratch'
 arcpy.env.overwriteOutput = True # Allow arcpy to overwrite output
 arcpy.env.workspace = str(data_path) # Set the folder to search
 
-# List feature classes whose names start with BMR
+# List feature classes with names start with BMR
 bmr_features = arcpy.ListFeatureClasses("BMR*")
 county = str(data_path / "TriCounties.shp")
 

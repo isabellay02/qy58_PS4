@@ -1,6 +1,7 @@
 # Import essential packages
 import arcpy
 
+# Input field
 inFC = arcpy.GetParameterAsText(0)
 
 # Describe the dataset as a dictionary
@@ -16,7 +17,7 @@ arcpy.AddMessage(f"YMin: {extent.YMin:.1f}")
 arcpy.AddMessage(f"XMax: {extent.XMax:.1f}")
 arcpy.AddMessage(f"YMax: {extent.YMax:.1f}")
 
-# Report
+# Report warnings
 if desc['datasetType'] == "FeatureClass":
     arcpy.AddWarning(f"Shape type: {desc['shapeType']}")
 elif desc['datasetType'] == "RasterDataset":
