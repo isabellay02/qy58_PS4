@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["1000","V:/ENV859_PS4/Scratch/StrmBuff1km.shp"]
+            "args": ["1000","V:/qy58_PS4/Scratch/StrmBuff1km.shp"]
         }
     ]
 }
